@@ -27,9 +27,10 @@ for m in sheetnames:
     #获取各行数据
     for i in range(nrows):
         row_data = sh.row_values(i)
+        line = ""
         for j in range(len(row_data)):
-			if j == 0:
-				print str(row_data[j]),
-			else:
-				print "\t" + str(row_data[j]),
-        print ""  #输出每行后换行
+		if j == 0:
+			line = str(row_data[j]),
+		else:
+			line = line + "\t" + str(row_data[j]),
+        print line  #输出每行后换行
