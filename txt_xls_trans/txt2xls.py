@@ -27,6 +27,9 @@ def txt2xls(filename,xlsname):  #文本转换成xls的函数，filename 表示�
     xls.save(xlsname+'.xls') #保存
 
 if __name__ == "__main__":
+    if len(sys.argv) != 3:
+        print "Usage: txt2xls text_file output_xls_file"
+        exit(1)
     filename = sys.argv[1]
     xlsname  = sys.argv[2]
     txt2xls(filename,xlsname)
