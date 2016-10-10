@@ -7,15 +7,12 @@ import xlrd
 
 def xls2txt(xls_file, txt_file):
     fname = xls_file    #命令行参数 ,取第一个参数
-
     # print  fname
     bk = xlrd.open_workbook(fname)
     #工作簿中所有sheet的名称
     #print bk.sheet_names()
     #shxrange = range(bk.nsheets) 
-        
     fo = open(txt_file, 'wb')
-
     #循环获取每个sheet中的数据
     sheetnames = bk.sheet_names()
     for m in sheetnames:
