@@ -89,3 +89,15 @@ export LD_LIBRARY_PATH=${OPENCV_HOME_PATH}/lib:$LD_LIBRARY_PATH
 export PKG_CONFIG_PATH=${OPENCV_HOME_PATH}/lib/pkgconfig/:${PKG_CONFIG_PATH}
 
 alias l='ls -lthr'
+
+abspath ()
+{
+     who=`whoami`;
+     cwd=`pwd`;
+     if [[ "$1" == "/"* ]]; then
+         path=$1;
+     else
+         path=$cwd/$1;
+     fi;
+     echo $who@$HOSTNAME:$path
+}
