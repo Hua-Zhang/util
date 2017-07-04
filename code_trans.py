@@ -15,7 +15,7 @@ def strdecode(sentence):
 
 def trans(out_code):
     for line in sys.stdin:
-        trans = strdecode(line).strip()
+        trans = strdecode(line).strip("\n")
         # out_code("utf-8" || 'gbk')
         print trans.encode(out_code)
 
