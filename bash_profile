@@ -23,3 +23,8 @@ export PATH
 export LD_LIBRARY_PATH=/home/rd/zhanghua/MLtools/maxent_use/lib/:$LD_LIBRARY_PATH
 #静态链接库搜索路径：
 export LIBRARY_PATH=/home/rd/zhanghua/MLtools/maxent_use/lib/:$LIBRARY_PATH
+
+#设置终端颜色
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
