@@ -12,7 +12,7 @@ fi
 
 ifconfig | grep "Bcast" | awk '{split($2, a, ":"); print a[2]":""'$port'"}'
 #如果ifconfig没有预支持
-# $ ifconfig | grep "Bcast" | awk '{split($2, a, ":"); print a[2]":""'$port'"}'
+#${ifconfig} | grep "Bcast" | awk '{split($2, a, ":"); print a[2]":""'$port'"}'
 
 python -m SimpleHTTPServer $port
 #Python3
