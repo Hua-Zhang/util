@@ -11,6 +11,8 @@ then
 fi
 
 ifconfig | grep "Bcast" | awk '{split($2, a, ":"); print a[2]":""'$port'"}'
+#mac
+#ifconfig | grep "inet"  | grep "-" | awk '{print $2":""'$port'"}'
 
 python -m SimpleHTTPServer $port
 #Python3
