@@ -33,7 +33,7 @@ def xls2txt(xls_file, txt_file):
                 else:
                     line = line + "\t" + str(row_data[j])
             fo.write(line + "\n")  #输出每行后换行
-        fo.close()
+    fo.close()
 	
 if __name__ == "__main__":
     if len(sys.argv) != 3:
