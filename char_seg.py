@@ -15,5 +15,5 @@ def charseg(str):
         return m.encode("utf-8")
 
 for line in sys.stdin:
-        segresult = charseg(line.strip());
-        print segresult;
+        segresult = charseg(line.strip())
+        print segresult
