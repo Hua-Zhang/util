@@ -6,6 +6,9 @@ syntax on           " 语法高亮
 " 在处理未保存或只读文件的时候，弹出确认
 set confirm
 
+" 设置代码折叠（按照缩进层级），zc折起，zo打开
+set foldmethod=indent
+
 " 自动缩进
 set autoindent
 set cindent
