@@ -29,9 +29,9 @@ def xls2txt(xls_file, txt_file):
             line = ""
             for j in range(len(row_data)):
                 if j == 0:
-                    line = str(row_data[j])
+                    line = str(row_data[j]).strip().replace("\n", " ").replace("\t", " ")
                 else:
-                    line = line + "\t" + str(row_data[j])
+                    line = line + "\t" + str(row_data[j]).strip().replace("\n", " ").replace("\t", " ")
             fo.write(line + "\n")  #输出每行后换行
     fo.close()
 	
