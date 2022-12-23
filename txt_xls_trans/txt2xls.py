@@ -24,7 +24,7 @@ def txt2xls(filename,xlsname):  #文本转换成xls的函数，filename 表示�
         x += 1 #另起一行
         y = 0  #初始成第一列
     f.close()
-    xls.save(xlsname+'.xlsx') #保存
+    xls.save(xlsname+'.xls') #保存
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
